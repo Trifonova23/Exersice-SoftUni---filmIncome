@@ -1,13 +1,13 @@
 function filmIncome(input) {
   let filmName = Number(input[0]);
-  let dayCount = Number(input[1]); //брой дни
-  let ticketsCount = Number(input[2]); // брой билети
-  let ticketPrice = Number(input[3]); // цена на билет
-  let procentageForCinema = Number(input[4]); //% за студиото
-  let sumTicketsForDay = 0; //обща сума от билети за ден
-  let allIncomeForAllPeriof = 0; // приход за целият период
-  //   let incomePriceForStudio = 0; // % оставащ за студиото
-  let allIncomeForTheFilm = 0; // общ приход от филма в лв
+  let dayCount = Number(input[1]); //Count days
+  let ticketsCount = Number(input[2]); // Count tickets
+  let ticketPrice = Number(input[3]); // Price tickets
+  let procentageForCinema = Number(input[4]); //% for the studio
+  let sumTicketsForDay = 0; //Total sum from teh tickets per day
+  let allIncomeForAllPeriof = 0; //Income for all perios
+
+  let allIncomeForTheFilm = 0; //Total income for the film
 
   sumTicketsForDay = ticketsCount * ticketPrice;
   allIncomeForAllPeriof = dayCount * sumTicketsForDay;
